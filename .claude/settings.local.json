@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"=== pwd ===\" && pwd && echo \"=== uname ===\" && uname -a && echo \"=== working dir listing ===\" && ls -la /Users/dev/workspace-01e0d8ff 2>/dev/null | head -50)",
+      "Bash(echo \"=== C:/workstation? ===\" && ls -la /Users/dev/ 2>/dev/null | head -40; echo \"=== check for akane / projects anywhere ===\"; ls -la ~ 2>/dev/null | head -40)",
+      "Bash(echo \"=== Projects ===\" && ls -la /c/workstation/Projects 2>/dev/null | head -60; echo; echo \"=== workstation root ===\" && ls -la /c/workstation 2>/dev/null | head -40)",
+      "Bash(echo \"=== Projects/.env keys \\(names only\\) ===\" && sed 's/=.*/=<redacted>/' \"/c/workstation/Projects/.env\" 2>/dev/null; echo; echo \"=== eleon/.claude ===\" && ls -la /c/workstation/Projects/eleon/.claude 2>/dev/null)",
+      "Bash(python -m pip install --quiet httpx python-dotenv psutil)",
+      "Bash(python -c \"import httpx, dotenv, psutil; print\\('httpx', httpx.__version__, '| psutil', psutil.__version__, '| dotenv ok'\\)\")",
+      "Bash(python run.py --selftest)",
+      "Bash(python -c ' *)",
+      "Bash(PYTHONIOENCODING=utf-8 python run.py --selftest)",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(\"/c/Users/mhamz/AppData/Local/Programs/Ollama/ollama\" list *)",
+      "Bash(curl -s http://localhost:1234/v1/models)",
+      "Bash(taskkill //F //IM ollama.exe)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(PYTHONIOENCODING=utf-8 python \"/private/tmp/claude-501/-Users-wwzz-Downloads-proxyclawd/88833871-9d1c-410a-8425-a5a54e5377ef/scratchpad/test_safety.py\")",
+      "Bash(cp \"/private/tmp/claude-501/-Users-wwzz-Downloads-proxyclawd/88833871-9d1c-410a-8425-a5a54e5377ef/scratchpad/test_safety.py\" ./_scratch_test_safety.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python _scratch_test_safety.py)",
+      "Bash(rm -f ./_scratch_test_safety.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python tests/test_safety.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python tests/test_agent_live.py)",
+      "Bash(xargs wc -l)",
+      "Bash(python tests/test_safety.py)",
+      "Bash(python tests/test_phase2_live.py)",
+      "Bash(cd /Users/dev/workspace-ed826800 && grep -r \"tool_call_id\\\\|tool.*role\" --include=\"*.py\" | head -20)",
+      "WebFetch(domain:platform.openai.com)",
+      "WebFetch(domain:developers.openai.com)",
+      "Bash(cat)",
+      "Read(//private/tmp/claude-501/-Users-wwzz-Downloads-proxyclawd/88833871-9d1c-410a-8425-a5a54e5377ef/scratchpad/**)",
+      "Bash(python /tmp/test_injection.py)",
+      "Bash(mkdir -p /private/tmp/claude-501)",
+      "Read(//c/private/tmp/claude-501/**)",
+      "Read(//tmp/**)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:geelaw.blog)",
+      "Bash(cp \"/c/Users/mhamz/AppData/Local/Temp/claude/C--workstation-Projects-eleon/49407aad-6337-4719-a0b4-e101fe122a1e/tasks/wtf1lzcvt.output\" /c/workstation/Projects/eleon/_review_raw.json)"
+    ]
+  }
+}

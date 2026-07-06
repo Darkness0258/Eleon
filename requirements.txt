@@ -1,0 +1,17 @@
+# eleon Phase 1 (CLI) core deps
+httpx>=0.27
+python-dotenv>=1.0
+psutil>=5.9
+
+# Phase 3 (desktop GUI) — python run.py --gui
+PyQt6>=6.6
+
+# Screenshots + GUI automation (used by the screenshot tool)
+pyautogui>=0.9.54
+
+# Phase 4 (voice) — python run.py --voice
+sounddevice>=0.4    # microphone capture (bundles PortAudio)
+edge-tts>=6.1       # neural TTS voices
+numpy>=1.26         # audio maths for the VAD recorder
+# STT uses the OpenAI transcription endpoint over HTTP (no extra SDK).
+# TTS falls back to Windows SAPI (pywin32) if edge-tts/network is unavailable.
