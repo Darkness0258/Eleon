@@ -1,9 +1,12 @@
+![eleon — ultimate AI assistant for Windows](assets/eleon-banner.svg)
+
 # eleon
 
-A high-capability desktop agent for Windows. Unlike a fixed-command assistant,
-eleon runs an **agentic tool-calling loop**: it's handed a toolbox and a goal,
-then calls tools, reads the results, and calls more tools until the goal is
-done. That's what lets it "do anything" instead of matching a fixed menu.
+The ultimate AI assistant for Windows — a high-capability desktop agent.
+Unlike a fixed-command assistant, eleon runs an **agentic tool-calling loop**:
+it's handed a toolbox and a goal, then calls tools, reads the results, and
+calls more tools until the goal is done. That's what lets it "do anything"
+instead of matching a fixed menu.
 
 - **Full PC control** — launch/close apps, manage files, processes, volume,
   brightness, media keys, windows, power, screenshots, and arbitrary shell /

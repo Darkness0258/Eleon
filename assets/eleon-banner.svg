@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141517"/>
+      <stop offset="100%" stop-color="#0c0d0e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="16%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ff8a3d" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ff8a3d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#glow)"/>
+
+  <!-- circuit tracery, right field -->
+  <g stroke="#ff8a3d" stroke-opacity="0.22" stroke-width="2" fill="none">
+    <polyline points="700,60 780,60 780,110 860,110"/>
+    <polyline points="740,260 740,210 900,210 900,150"/>
+    <polyline points="1000,50 1000,90 1080,90 1080,140 1150,140"/>
+    <polyline points="820,270 900,270 900,240 1020,240"/>
+  </g>
+  <g fill="#ff8a3d" fill-opacity="0.5">
+    <rect x="856" y="106" width="8" height="8"/>
+    <rect x="896" y="146" width="8" height="8"/>
+    <rect x="1146" y="136" width="8" height="8"/>
+    <rect x="1016" y="236" width="8" height="8"/>
+  </g>
+
+  <!-- agent-loop emblem: think -> call tool -> observe, cycling -->
+  <g transform="translate(150,160)">
+    <circle r="62" fill="none" stroke="#ff8a3d" stroke-width="3.5"
+            stroke-dasharray="1 11" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- direction arrow tangent near top-right node -->
+    <path d="M 43,-45 L 58,-38 L 46,-27 Z" fill="#ff8a3d"/>
+
+    <!-- three loop nodes: think / act / observe -->
+    <circle cx="0" cy="-62" r="10" fill="#ff8a3d"/>
+    <circle cx="53.7" cy="31" r="10" fill="#ffb066"/>
+    <circle cx="-53.7" cy="31" r="10" fill="#c96a2c"/>
+
+    <!-- core goal -->
+    <circle cx="0" cy="0" r="6" fill="#f4f1ea"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="262" y="185" font-family="'JetBrains Mono','Fira Code',Menlo,Consolas,monospace"
+        font-size="96" font-weight="700" letter-spacing="-2" fill="#f4f1ea">eleon</text>
+
+  <!-- tagline -->
+  <text x="266" y="222" font-family="'JetBrains Mono','Fira Code',Menlo,Consolas,monospace"
+        font-size="18" letter-spacing="3.5" fill="#8a8d93">ULTIMATE AI ASSISTANT &#183; AGENTIC CONTROL FOR WINDOWS</text>
+
+  <rect x="266" y="236" width="72" height="3" fill="#ff8a3d"/>
+</svg>
